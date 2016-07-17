@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>css3选择器</title>
+    <style type="text/css">
+        /*css2.1*/
+        div>p{
+            /*div标签下的子级标签p有效*/
+            color: red;
+        }
+        div p{
+            font-size: 2em;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>div>p Lorem ipsum dolor sit amet, consectetur </p>
+        <ul>
+            <li>
+                <p>div p Lorem ipsum dolor.</p>
+            </li>
+        </ul>
+    </div>
+    <p>p Lorem ipsum dolor.</p>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>三层嵌套制作圆角边</title>
+    <style type="text/css">
+        div{
+            height: 55px;
+        }
+        #center{
+            width: 100px;
+            background: url(img/button.png) 0 -111px;
+            margin: 0 auto;
+        }
+        #left{
+            width: 110px;
+            background: url(img/button.png) 0 0 no-repeat;
+            margin-left: -10px;
+        }
+        #right{
+            width: 100px;
+            background: url(img/button.png) right -56px no-repeat;
+            line-height: 55px;
+            text-align: center;
+            padding:0 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="center">
+        <div id="left">
+            <div id="right">登录</div>
+        </div>
+    </div>
+</body>
+</html>

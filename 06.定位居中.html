@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>定位居中</title>
+    <style type="text/css">
+        #outer{
+            width: 300px;
+            height: 300px;
+            border: 3px solid dodgerblue;
+            position: relative;/*相对定位*/
+        }
+        #inner{
+            width: 100px;
+            height: 100px;
+            background-color: lawngreen;
+            position: absolute;
+            /*定位·居中*/
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom:0;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <div id="outer">
+        <div id="inner">Lorem ipsum dolor sit amet, consectetur.</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>flex</title>
+    <style type="text/css">
+        #box{
+            background-color: lightgoldenrodyellow;
+            display: flex;
+        }
+        .box{
+            width: 200px;
+            background-color: powderblue;
+            margin:10px;
+            font-size: 3em;
+            text-align: center;
+        }
+        .fgrow{
+            /*剩余空间分配比例*/
+            flex-grow: 1;
+        }
+        .fgrow2{
+            /*剩余空间分配比例*/
+            flex-grow: 2;
+        }
+    </style>
+</head>
+<body>
+    <!-- 容器 -->
+    <div id="box">
+        <!-- 项目 -->
+        <div class="box fgrow">1</div>
+        <div class="box">2</div>
+        <div class="box fgrow">3</div>
+        <div class="box fgrow2">4</div>
+    </div>
+</body>
+</html>

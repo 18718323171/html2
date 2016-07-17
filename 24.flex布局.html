@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>flex布局</title>
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #box{
+            display: flex;
+            flex-direction: column;/*垂直排列*/
+            background-color: lightgoldenrodyellow;
+        }
+        #top{
+            background-color: darkred;
+            display:flex;
+        }
+        #top img{            
+            flex-grow: 1;/*放大的比例*/
+        }
+        #bottom{
+            background-color: darkgray;
+            display:flex;
+            flex-direction: column;
+        }
+        .box{
+            display:flex;
+        }
+        .box div{
+            flex-grow: 1;
+            height: 100px;
+            font-size: 3em;
+            text-align: center;
+            line-height: 100px;
+            color:#FFF;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <div id="top">
+            <img src="img/1.jpg" />
+        </div>
+        <div id="bottom">
+            <div class="box">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+            </div>
+            <div class="box">
+                <div>5</div>
+                <div>6</div>
+                <div>7</div>
+                <div>8</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

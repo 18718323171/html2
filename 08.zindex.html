@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>zindex</title>
+    <style type="text/css">
+        div{
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            z-index: 1;
+        }
+        #box1{
+            background-color: darkred;
+            left: 50px;
+            top: 50px;
+        }
+        #box2{
+            background-color: darkblue;
+            left: 100px;
+            top: 100px;
+        }
+        #box3{
+            background-color: darkseagreen;
+            left: 150px;
+            top: 150px;
+        }
+        div:hover{
+            z-index: 5;/*值越大，距离屏幕越近*/
+        }
+    </style>
+</head>
+<body>
+    <div id="box1"></div>
+    <div id="box2"></div>
+    <div id="box3"></div>
+</body>
+</html>
